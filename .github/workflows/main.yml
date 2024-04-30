@@ -12,8 +12,8 @@ jobs:
       # Installer les dépendances npm, les mettre en cache correctement
       # et exécuter tous les tests Cypress
       - name: Cypress run
-        working-directory: ./app
         uses: cypress-io/github-action@v6
+        working-directory: app
         with:
           build: npm run build
           start: npm start
