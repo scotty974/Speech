@@ -42,8 +42,8 @@ const getNextBoard = ({ board }) => {
   return newBoard;
 };
 function GameLife() {
-  const [xGrid, setXGrid] = useState(10);
-  const [yGrid, setYGrid] = useState(10);
+  const [xGrid] = useState(10);
+  const [yGrid] = useState(10);
   const [board, setBoard] = useState<boolean[][]>(
     generateBoard({ xGrid, yGrid })
   );
