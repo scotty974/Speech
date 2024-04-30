@@ -9,8 +9,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         working-directory: ./app
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
+
+      # Naviguer vers le répertoire de l'application
+      - name: Change directory
+        run: cd app
+      
+      # Installer les dépendances npm, les mettre en cache correctement
+      # et exécuter tous les tests Cypress
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
