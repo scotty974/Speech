@@ -1,11 +1,9 @@
 import "./App.css";
-
+import GameLife from "./gamelife/gameLife";
 function App() {
   return (
     <>
-      <canvas className="min-h-screen w-full bg-black">
-
-      </canvas>
+      <GameLife />
     </>
   );
 }
