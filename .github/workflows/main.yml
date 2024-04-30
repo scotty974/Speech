@@ -8,7 +8,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        working-directory: ./app
 
       # Naviguer vers le répertoire de l'application
       - name: Change directory
