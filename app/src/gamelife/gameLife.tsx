@@ -52,7 +52,7 @@ function GameLife() {
 
   useEffect(() => {
     if (running) {
-      intervalRef.current = setInterval(() => {
+      intervalRef.current = setInterval(() => { 
         setBoard(board =>getNextBoard({ board }));
       }, 2000);
     }else{
