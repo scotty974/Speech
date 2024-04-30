@@ -1,14 +1,13 @@
-
-import './App.css'
+import "./App.css";
 
 function App() {
-
-
   return (
     <>
-      <h1 className='underline'>Hello</h1>
+      <canvas className="min-h-screen w-full bg-black">
+
+      </canvas>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
